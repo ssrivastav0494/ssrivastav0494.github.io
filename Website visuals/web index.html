@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Latitude</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!--My Style Sheet-->
+    <link rel='stylesheet' type='text/css' media='screen' href='WebVisualizations\styles.css'>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!--Dropdown Selection-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="max_temperature.html">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="index" class="container" style="background-color: #dee2e6;">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <!-- Summary Box -->
+          <figure class="box" style="width:680px; height:500px;">
+            <h1>Summary: Latitude vs. X</h1>
+            <hr>
+            <img src="WebVisualizations\Resources\assets\images\max_temp.png" align="left" width=250px height=250px alt="Summary Image"/>
+            <p>In this project, we wanted to see how weather changes as we move towards equator and differences in the weather in both the hemispheres. We used OpenWeatherMap API to assemble the dataset of randomly selected 500+ cities.</p>
+            <p>After the dataset was assembled, we used Matplotlib and Python to plot various parameters vs. latitudes to see what impact it has on the weather of a particular city. We used four parameters: Max Temperature, Cloudiness, Humidity & Wind Speed. In this wesbite, we have provided visualizations, source data used and analysis of how these parameters correlate with the latitudes.</p>
+          </figure>
+        </div>
+        
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <!-- Visualization Box -->
+          <figure class="box" style="padding-left: 30px; padding-right: 30px;">
+            <h1>Visualizations</h1>
+            <hr>
+            <div class="container" style="padding-left:0px; padding-right:0px; margin-top: 15px;">
+              <div class="row">
+               <div class="col-lg-6 col-md-3 col-sm-3">
+                  <a href="max_temperature.html"> 
+                    <img src="WebVisualizations\Resources\assets\images\max_temp.png" width=150px height=150px alt="Max Temp Graph"/>
+                  </a>
+                </div>
+
+                <div class="col-lg-6 col-md-3 col-sm-3">
+                  <a href="humidity.html">
+                    <img src="WebVisualizations\Resources\assets\images\humidity.png" width=150px height=150px alt="Humidity Graph"/>
+                  </a>
+                </div>
+              
+                <div class="col-lg-6 col-md-3 col-sm-3">
+                  <a href="cloudiness.html">
+                    <img src="WebVisualizations\Resources\assets\images\cloudiness.png" width=150px height=150px alt="Cloudiness Graph"/>
+                  </a>
+                </div>
+                
+                <div class="col-lg-6 col-md-3 col-sm-3">
+                  <a href="wind_speed.html">
+                    <img src="WebVisualizations\Resources\assets\images\wind_speed.png" width=150px height=150px alt="Wind Speed"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+  </body>
+</html>
