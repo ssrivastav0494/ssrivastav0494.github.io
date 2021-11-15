@@ -1,0 +1,85 @@
+body{background-color: #dee2e6}
+p{font-size: large; text-align:justify;}
+
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0);
+}
+
+a.navbar-brand {
+    background-color: #439497;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.box {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    background: #ffffff;
+}
+
+#comp1{
+    margin-top: 30px;
+    text-align:center;
+    color: #439497;
+}
+
+#comp2{
+    margin-top: 30px;
+    text-align:center;
+    color: #439497;
+}
+
+div#data {
+    background-color: white;
+}
+
+.container{
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255); 
+    margin-bottom: 50px;
+}
+
+h1{ 
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #439497;
+}
+
+#vis{
+    width:680px; 
+    height:650px;
+}
+
+div#highlight{
+    border:1px solid white;
+}
+
+div#highlight:hover{
+    border: 1px solid #000000;
+}
+
+@media (max-width: 900px) {
+    .navbar-expand-lg {background-color: #439497 !important;}
+    .navbar-collapse{background-color: rgb(255, 255, 255);}
+    body{background-color: white;}
+    #index{background-color: white;}
+}
